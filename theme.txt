@@ -1,0 +1,63 @@
+# Project Theme Analysis
+
+## Overview
+The project implements a premium "Ivory & Gold" aesthetic, utilizing a light color scheme with warm undertones. It uses Tailwind CSS for utility classes but relies heavily on custom CSS in `index.css` for the core visual identity.
+
+## Color Palette
+
+### Backgrounds
+- **Global Background:** Linear Gradient (Ivory)
+  - Start: `#fefaf5`
+  - Mid: `#fdf8f0`
+  - End: `#f8f4ec`
+- **Footer Background:** `rgba(254, 250, 245, 0.95)` with backdrop blur.
+- **Tailwind Config Colors:**
+  - `light-bg`: `#f9f5eb`
+  - `dark-bg`: `#e8e2d9`
+
+### Typography Colors
+- **Primary Text:** `#5d4037` (Warm Brown)
+- **Headings (H1):** Gradient Text
+  - Start: `#2d1b14`
+  - End: `#4a2c1a`
+- **Links/Accents:** `#d4a574` (Gold) -> Hover: `#c19a6b`
+- **Tailwind Config Colors:**
+  - `text-dark`: `#2d3748`
+  - `text-gray`: `#4a5568`
+  - `error-red`: `#dc3545`
+
+### UI Elements (Buttons/Borders)
+- **Button Background:** Linear Gradient (Gold)
+  - Start: `#d4a574`
+  - End: `#c19a6b`
+- **Button Text:** `#2d1b14`
+- **Borders:** `#e8e2d9` (from Tailwind config) or `rgba(245, 240, 219, 0.6)` (from CSS).
+
+## Typography
+- **Font Family:**
+  - `index.css`: `'Inter', system-ui, sans-serif` (Primary used in app)
+  - `tailwind.config.ts`: `'Poppins', sans-serif` (Defined but potentially overridden by global CSS)
+- **Headings:** Bold (700), Large scale (3.2em on desktop).
+- **Body:** Regular (400), Line-height 1.5.
+
+## UI Components
+
+### Buttons
+- **Shape:** Rounded corners (12px).
+- **Style:** Gradient background, slight border, shadow.
+- **Interactions:**
+  - Hover: Translate Y (-2px), increased shadow.
+  - Focus: Outline ring.
+
+### Footer
+- **Style:** Sticky at bottom, glassmorphism effect (backdrop blur), top border.
+- **Content:** Centered text, gold links.
+
+## Responsive Design
+- **Breakpoints:**
+  - Mobile (< 576px): Base font 14px
+  - Tablet (577px - 768px): Base font 15px
+  - Laptop (769px - 992px): Base font 16px
+  - Desktop (993px - 1200px): Base font 17px
+  - Large Desktop (> 1201px): Base font 18px
+- **Scaling:** Font sizes and padding scale with the viewport width.
